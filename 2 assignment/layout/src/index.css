@@ -1,0 +1,111 @@
+/* TODO */
+header {
+  text-align: center;
+}
+
+body {
+  margin: 10px;
+  padding: 1%;
+  min-height: 100vh; /* Минимальная высота равна высоте видимой области окна */
+  box-sizing: border-box;
+  border: 2px solid darkgrey;
+  font-family: Arial, sans-serif;
+
+}
+
+
+.cat-border {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: left;
+  transition: background-color 0.3s; /* Плавное изменение цвета фона */
+  display: inline-block;
+  min-height: 400px;
+  min-width: 320px;
+}
+
+.cat-border:hover {
+  background-color: #bfbcbc; /* Изменение цвета фона при наведении */
+}
+
+.cat-name {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.cat-name span {
+  /*display: inline-block; !* Превращаем span в блочный элемент *!*/
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.cat-name:hover span {
+  color: #024f60; /* Изменение цвета текста при наведении */
+  text-decoration: underline; /* Добавление подчеркивания при наведении */
+}
+
+.cat-description {
+  background-color: #f8f8f8; /* Цвет фона блока */
+  padding: 15px; /* Внутренний отступ */
+  border: 1px solid #ccc; /* Граница блока */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень блока */
+  color: #333; /* Цвет текста */
+  font-size: 18px; /* Размер шрифта */
+  line-height: 1.5; /* Междустрочное расстояние */
+  overflow: hidden;
+
+}
+
+/* Дополнительные стили, если нужно улучшить читаемость текста или добавить декоративные элементы */
+
+.cat-description:hover {
+  background-color: #e0e0e0; /* Изменение цвета фона при наведении */
+}
+
+.cat-info {
+  display: none;
+}
+
+.cat-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5%; /* Adjust the height of the container based on your design */
+}
+
+.toggle-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toggle:checked ~ .cat-container .cat-info {
+  display: block;
+}
+
+.toggle:checked ~ .cat-container .cat-img {
+  height: 300px;
+}
+
+.toggle:checked ~ .cat-container .cat-img .cat-photo {
+  height: 100% !important;
+  width: 100%;
+  max-width: 30%;
+
+}
+
+.toggle:checked ~ .cat-container {
+  width: 320%;
+  display: grid;
+  margin: auto;
+}

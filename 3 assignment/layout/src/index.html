@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Kitties</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1 class="header__name"><b class="first-letter">М</b>урзякино</h1>
+    </header>
+    <div class="slider middle">
+        <div class="slider__wrapper">
+            <div class="slides">
+                <input class="slider__button" type="radio" name="r" id="r1" checked>
+                <input class="slider__button" type="radio" name="r" id="r2">
+                <input class="slider__button" type="radio" name="r" id="r3">
+                <input class="slider__button" type="radio" name="r" id="r4">
+
+                <div class="slide s1">
+                    <label for="r1">
+                        <img class=slide__img
+                             src="cat1.jpeg" alt="котик_1"
+                             title="Кот Василий">
+                    </label>
+                </div>
+                <div class="slide s2">
+                    <label for="r2">
+                        <img class=slide__img
+                             src="cat2.jpg" alt="котик_2"
+                             title="Кот Фокси">
+                    </label>
+                </div>
+                <div class="slide s3">
+                    <label for="r3">
+                        <img class=slide__img
+                             src="cat3.png"
+                             alt="котик_3" title="котик_2">
+                    </label>
+                </div>
+                <div class="slide s4">
+                    <label for="r4">
+                        <img class=slide__img
+                             src="cat4.jpg" alt="котик_3"
+                             title="Кошка Зефирка">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__address">
+            <p class="footer__description">Наши контакты:</p>
+            <br>
+            <address>
+                <img class="footer__img" alt="значок письма"
+                     src="https://cdn-icons-png.flaticon.com/512/64/64904.png?w=740&t=st=1669299580~exp=1669300180~hmac=46f475175439510265e8dff656476e123c080421e375a8a7464c35f672cba27f">
+                <a href="mailto:murzyakino@mail.com">murzyakino@mail.com</a></address>
+            <br>
+            <address>
+                <img class="footer__img" alt="значок трубки"
+                     src="phone-icon-black-and-white-4.jpg">
+                <a href="tel:+123456789">+1 (234) 567-89</a>
+            </address>
+        </div>
+        <div class="footer__OOO">
+            <p class="footer_footer">2023 ООО «Мурзякины котята»</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
