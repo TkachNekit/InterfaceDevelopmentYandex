@@ -22,15 +22,15 @@ it('should return 1 when n is 1', () => {
     expect(result).toBe(1);
 });
 
-it('should return 1 when n is 1', () => {
+it('should return 8 when n is 6', () => {
     // Given
-    const n = 1;
+    const n = 6;
 
     // When
     const result = fibonacciProblem(n);
 
     // Then
-    expect(result).toBe(1);
+    expect(result).toBe(8);
 });
 
 it('should return 1 when n is 2', () => {

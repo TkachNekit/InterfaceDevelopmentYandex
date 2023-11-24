@@ -83,6 +83,7 @@ function fibonacciProblem(n) {
     return array[n];
 }
 
+console.log(fibonacciProblem(6))
 
 /**
  * Транспонирует матрицу
