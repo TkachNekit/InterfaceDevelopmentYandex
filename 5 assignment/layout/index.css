@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 7vh;
+    font-size: 3vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #222222;
+    opacity: 1;
+}
+
+
+.main {
+    height: 100%;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67vh;
+    width: 60%;
+    margin: 5vw auto 0 auto;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cont {
+    position: absolute;
+    white-space: nowrap;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: left 0.3s, bottom 0.3s;
+    z-index: 0;
+}
+
+.cont:first-child {
+    z-index: 1;
+}
+
+.cont .pig-name {
+    position: relative;
+    display: block;
+    bottom: 30%;
+    left: 10%;
+    margin: 0;
+    height: 20%;
+    width: fit-content;
+    font-size: 3vw;
+    color: white;
+    padding-left: 5px;
+    cursor: pointer;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cont .pig-years {
+    position: relative;
+    display: block;
+    bottom: 43%;
+    left: 10%;
+    margin: 0;
+    height: 20%;
+    width: fit-content;
+    font-size: 2vw;
+    color: white;
+    padding-left: 5px;
+    cursor: pointer;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cont .pig-photo {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.buttons {
+    position: relative;
+    margin-top: 5px;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons .button {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 5vw;
+}
+.p {
+    padding-left: 5px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
