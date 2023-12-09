@@ -1,0 +1,497 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 43% 43% 14%;
+    padding: 12px 14px;
+}
+
+.location__img {
+    width: 12px;
+}
+
+.location {
+    display: inline;
+    padding-left: 30px;
+    font-size: 80%;
+    color: #918d8d;
+    justify-self: left;
+}
+
+.location:hover {
+    color: #9b8ccc;
+}
+
+.location:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.options {
+    justify-self: right;
+    font-size: 80%;
+}
+
+.login {
+    margin-bottom: 10px;
+}
+
+.login::first-letter {
+    color: #a01857;
+}
+
+.login,
+.lettercount {
+    font-weight: bold;
+}
+
+.lettercount {
+    display: inline-block;
+}
+
+a .mail:hover,
+.login a:hover,
+a .lettercount:hover {
+    color: #a01857;
+}
+
+.mailfield {
+    position: absolute;
+    box-shadow: 0 0 10px 0 #e6e6e6;
+    padding: 12px 14px;
+    height: min-content;
+    width: 120px;
+    right: 10px;
+    font-size: 80%;
+}
+
+.mailfield__ref {
+    text-decoration: none;
+    color: #000;
+}
+
+.news__block {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding-bottom: 30px;
+}
+
+.news__title {
+    display: inline;
+    padding-right: 10px;
+}
+
+.widget__title__first {
+    color: #0e0e92;
+}
+
+.widget__title__second {
+    color: #3b3be2;
+}
+
+.news__time {
+    font-size: 85%;
+    color: #999;
+}
+
+.news__time__ref {
+    color: #999;
+}
+
+.news__time__ref:hover {
+    color: #a01857;
+}
+
+.news__list {
+    margin: 2px 0 0 -40px;
+    line-height: 200%;
+    padding-bottom: 5px;
+}
+
+.stocks__content {
+    letter-spacing: .6px;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.stock {
+    margin: 0 5px 0 0;
+}
+
+.stock__name {
+    font-weight: 600;
+}
+
+.stock__change {
+    color: #2bc447;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    justify-items: center;
+}
+
+/*необходимость установить ширину для всех article на странице*/
+main article {
+    width: 60%;
+}
+
+/*необходимость сбросить стиль для всех ссылок на странице*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.teaser__img {
+    width: 120px;
+    height: 90px;
+}
+
+.teaser {
+    display: grid;
+    align-items: end;
+}
+
+.teaser__title {
+    margin: 2px 0;
+}
+
+.teaser__title__ref {
+    color: #0e0e92;
+}
+
+.teaser__description {
+    display: block;
+    width: 60%;
+}
+
+.search {
+    display: grid;
+}
+
+.search__list {
+    padding: 0;
+}
+
+.search__list__item {
+    display: inline;
+    margin-right: 20px;
+    font-size: 110%;
+}
+
+.search__list__item__ref {
+    color: #0e0e92;
+}
+
+.search__content {
+    display: grid;
+    grid-template-columns: 0 750px 90px 0;
+}
+
+.search__bar,
+.search__button {
+    height: 30px;
+}
+
+.search__bar {
+    border: 2px solid #ffcd07;
+    width: 750px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.search__button {
+    width: 90px;
+    height: 36px;
+    background-color: #ffcd07;
+    border: 2px solid #ffcd07;
+    margin-left: 14px;
+    font-size: 16px;
+}
+
+.search__abutton__arrow {
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 10px solid #fc0;
+    margin-left: 14px;
+}
+
+.logotip {
+    width: 100px;
+    height: 42px;
+    position: absolute;
+    margin: -6px 0 0 -120px;
+}
+
+.search__example {
+    padding-top: 10px;
+}
+
+.search__example__link {
+    color: #a1a1a1;
+}
+
+.banner {
+    padding: 20px 0;
+}
+
+.banner__img {
+    width: 80%;
+}
+
+main article:last-of-type {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0 0 10px -40px;
+    line-height: 200%;
+    margin-top: -10px;
+}
+
+.widget__title {
+    color: #0e0e92;
+    font-weight: 500;
+}
+
+.list__header {
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.tv__channel,
+.afisha__description,
+.auto__news__time {
+    color: #918d8d;
+}
+
+.tv {
+    margin: 0;
+}
+
+.tv h2 a {
+    display: inline;
+}
+
+.widget__img {
+    width: 90px;
+    border-radius: 5px;
+    margin-bottom: -2px;
+}
+
+.widget__title__img {
+    width: 35px;
+    transform: scale(.8);
+    position: absolute;
+    margin-top: 12px;
+}
+
+.widget__title__after {
+    font-size: 160%;
+    padding-left: 40px;
+    color: #000;
+}
+
+.widget__title > h2,
+.widget__title > img {
+    display: inline-block;
+}
+
+.column__2,
+.column__3 {
+    margin-left: 10px;
+}
+
+.map__text {
+    word-spacing: 15px;
+}
+
+.map .list li,
+.afisha__concert {
+    font-weight: 600;
+}
+
+.show__more img {
+    width: 15px;
+}
+
+.best__text {
+    display: block;
+}
+
+.show__more {
+    display: block;
+    padding-top: 50px;
+    color: #0e0e92;
+}
+
+.best input {
+    display: none;
+}
+
+.widget__text__ref {
+    color: #0e0e92;
+}
+
+.auto__news__time {
+    margin-left: 6px;
+}
+
+.auto__news__content {
+    max-height: 220px;
+    overflow-y: scroll;
+}
+
+.auto__news__container {
+    position: relative;
+}
+
+.auto__news__container:after,
+.auto__news__container:before {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: #fff 0 0 30px 10px;
+}
+
+.auto__news__container:after {
+    bottom: 0;
+}
+
+.auto__news__container:before {
+    top: 0;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    display: none;
+}
+
+/*нужно для всех label*/
+label {
+    cursor: pointer;
+}
+
+.options__menu {
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1), 0 2px 6px 0 rgba(0, 0, 0, .1);
+    padding: 5px;
+    position: absolute;
+    background: #fff;
+    margin: 5px 0 0 -65px;
+    width: 180px;
+    display: none;
+}
+
+input[id='options']:checked ~ .options__menu {
+    display: block;
+}
+
+.options__menu__label {
+    display: block;
+    z-index: 100;
+    text-align: left;
+    line-height: 1.5em;
+    height: 20px;
+}
+
+.options__menu > label:before {
+    content: '';
+    border: 1px #666 solid;
+    border-radius: 4px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 2px 4px 0 0;
+    vertical-align: -2px;
+}
+
+.options__menu__label:after {
+    content: '';
+    position: relative;
+    left: 10px;
+    top: -9px;
+    width: 2px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.inp__visited:checked ~ header .options__menu label[for='visited']:after,
+.inp__best:checked ~ header .options__menu label[for='best']:after,
+.inp__tv:checked ~ header .options__menu label[for='tv']:after,
+.inp__auto__news:checked ~ header .options__menu label[for='auto__news']:after,
+.inp__weather:checked ~ header .options__menu label[for='weather']:after,
+.inp__traffic__light:checked ~ header .options__menu label[
+for='traffic__light']:after,
+.inp__map:checked ~ header .options__menu label[for='map']:after,
+.inp__afisha:checked ~ header .options__menu label[for='afisha']:after {
+    display: block;
+    left: 5px;
+    top: -15px;
+}
+
+.inp__visited:checked ~ header .options__menu label[for='visited']:before,
+.inp__best:checked ~ header .options__menu label[for='best']:before,
+.inp__tv:checked ~ header .options__menu label[for='tv']:before,
+.inp__auto__news:checked ~ header .options__menu label[for='auto__news']:before,
+.inp__weather:checked ~ header .options__menu label[for='weather']:before,
+.inp__traffic__light:checked ~ header .options__menu label[
+for='traffic__light']:before,
+.inp__map:checked ~ header .options__menu label[for='map']:before,
+.inp__afisha:checked ~ header .options__menu label[for='afisha']:before {
+    background: #2196f3;
+    border-color: white;
+}
+
+.widget,
+.column1,
+.column2 {
+    display: none;
+}
+
+.inp__visited:checked ~ main .visited,
+.inp__best:checked ~ main .best,
+.inp__tv:checked ~ main .tv,
+.inp__auto__news:checked ~ main .auto__news,
+.inp__weather:checked ~ main .weather,
+.inp__traffic__light:checked ~ main .traffic__light,
+.inp__map:checked ~ main .map,
+.inp__afisha:checked ~ main .afisha,
+.inp__visited:checked ~ main .column1,
+.inp__best:checked ~ main .column1,
+.inp__tv:checked ~ main .column2,
+.inp__auto__news:checked ~ main .column2 {
+    display: block;
+}
+
+.best__text {
+    padding-top: 5px;
+}
+
+.anecdote__1,
+.anecdote__2,
+.anecdote__3,
+.anecdote__4,
+.anecdote__5 {
+    display: none;
+}
+
+input:checked[id='anecdote1'] ~ .anecdote__1,
+input:checked[id='anecdote2'] ~ .anecdote__2,
+input:checked[id='anecdote3'] ~ .anecdote__3,
+input:checked[id='anecdote4'] ~ .anecdote__4,
+input:checked[id='anecdote5'] ~ .anecdote__5 {
+    display: block !important;
+}
