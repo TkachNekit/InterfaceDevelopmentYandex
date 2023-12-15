@@ -1,0 +1,1 @@
+const timeID = setInterval(console.log, 1000, 1)
